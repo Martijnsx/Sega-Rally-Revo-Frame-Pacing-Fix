@@ -2,6 +2,7 @@
 
 ## P1 / 1.0.0 — package prepared (not yet released)
 
+- Documented supported original executable version **4.0.6.0** (exact SHA-256 match still required).
 - Offline HTML patcher for one exact SHA-256-verified Windows game executable.
 - Four-byte timer initialization change at two file locations; the original game executable is not distributed.
 - Python patch/restore alternative, source, tests and technical documentation are included in the package.
