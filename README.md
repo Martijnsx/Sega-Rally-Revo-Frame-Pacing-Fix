@@ -4,6 +4,10 @@ An **unofficial, free and offline community patch** intended to address uneven f
 
 > **Release status:** The P1 patch package has been prepared. A downloadable GitHub Release still needs to be uploaded and independently tested on more systems. Do not assume compatibility with all editions.
 
+## Supported executable version
+
+**SEGA Rally.exe — file version 4.0.6.0** (Windows PC). This patch is tied to the exact original **SHA-256 hash** documented below; the version number alone is not enough to confirm compatibility.
+
 ## Download
 
 Once uploaded, get the official package from [Releases](https://github.com/Martijnsx/Sega-Rally-Revo-Frame-Pacing-Fix/releases). The ZIP includes **SRR_P1_Patcher.html**, source code, Python alternative, checksums and technical documentation. It contains **no copyrighted game EXE or DLL**.
@@ -26,6 +30,7 @@ The patch adjusts two timer initializers from 15,999 microseconds to zero; it ch
 
 Only the following original build is accepted:
 
+- **File version:** `4.0.6.0`
 - **Original EXE SHA-256:** `246b4a6338d8f40069d4a24bc35073c6b5649bc71df3d2d6238139e07112db39`
 - **Patched EXE SHA-256:** `d1a1a2737b71ea4edfb46bc8bcdc712bf55485d521f7e284be5b93df1512d9e7`
 - **EXE size:** 3,700,786 bytes
