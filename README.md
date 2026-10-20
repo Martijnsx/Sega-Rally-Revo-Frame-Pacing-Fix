@@ -1,43 +1,51 @@
-# Sega Rally Revo (PC) — Frame Pacing Fix
+# Sega Rally Revo (PC) — Frame Pacing Fix P1
 
-An **unofficial community project** focused on improving uneven frame delivery and microstuttering in the Windows PC version of **Sega Rally Revo (2007)**.
+An **unofficial, free and offline community patch** intended to address uneven frame delivery and microstuttering in *Sega Rally Revo (2007)* on Windows PC.
 
-> **Status: Preparing the first release.** A candidate fix improved smoothness in initial testing, but different game builds and hardware have not yet been independently verified. **No public patch download is available yet.**
-
-## The problem
-
-On some systems, the PC game appears to hitch or stutter despite a steady reported FPS. This project focuses on **frame pacing** (consistent time between displayed frames), rather than promising higher average FPS.
+> **Release status:** The P1 patch package has been prepared. A downloadable GitHub Release still needs to be uploaded and independently tested on more systems. Do not assume compatibility with all editions.
 
 ## Download
 
-A tested release will be published on the [Releases page](https://github.com/Martijnsx/Sega-Rally-Revo-Frame-Pacing-Fix/releases). Until then, please avoid unofficial third-party downloads claiming to be this fix.
+Once uploaded, get the official package from [Releases](https://github.com/Martijnsx/Sega-Rally-Revo-Frame-Pacing-Fix/releases). The ZIP includes **SRR_P1_Patcher.html**, source code, Python alternative, checksums and technical documentation. It contains **no copyrighted game EXE or DLL**.
 
-## Planned installation and verification
+## How to install (Windows)
 
-- Patch only a verified, supported original game executable; **do not distribute the full copyrighted EXE**.
-- Check the original executable's SHA-256 hash to prevent patching incompatible builds.
-- Back up the original executable and provide a restore method.
-- Verify the patched output hash and document how to uninstall.
-- Test the package on a clean copy of the supported game before release.
+1. Download and **extract the ZIP** to a folder.
+2. **Unblock the downloaded file in Windows Explorer if necessary:** right-click `SRR_P1_Patcher.html` → **Properties** → **General** → tick **Unblock** (if present) → **Apply**. You can also unblock the downloaded ZIP *before* extracting it. Do this only for a download whose origin you trust and have verified.
+3. Open **SRR_P1_Patcher.html** in a desktop web browser. It works **offline**.
+4. Select your own **SEGA Rally.exe**. The patcher checks its hash and refuses unrecognized versions.
+5. Click **Download patched EXE**. Close the game, **back up your original EXE**, and put the downloaded copy in the game folder as `SEGA Rally.exe` (remove any browser-added `(1)` suffix).
+6. If Windows marks the resulting EXE as blocked, use its **Properties → General → Unblock** option too, but only if you've verified the file.
+7. Launch the game normally. To undo the fix, use your backup or the patcher's **Download restored EXE** feature.
 
-## Compatibility
+**Do not disable antivirus or Windows security protections to use this patch.** If an Unblock checkbox is absent, no action is required.
 
-| Item | Status |
-| --- | --- |
-| Game | Sega Rally Revo (Windows PC) |
-| Supported EXE versions | To be verified |
-| Windows configurations | More testing required |
-| Steam Deck / Proton | Not verified |
-| Multiplayer | Not tested |
+## What P1 changes
 
-## Feedback
+The patch adjusts two timer initializers from 15,999 microseconds to zero; it changes **four bytes in total**. It does not modify renderer quality, simulation step, DLLs, network code or game content.
 
-Please use [Issues](https://github.com/Martijnsx/Sega-Rally-Revo-Frame-Pacing-Fix/issues) to describe your game edition, executable version (or hash), OS, GPU, and before/after observations. **Please do not upload copyrighted game executables.**
+Only the following original build is accepted:
 
-## Support
+- **Original EXE SHA-256:** `246b4a6338d8f40069d4a24bc35073c6b5649bc71df3d2d6238139e07112db39`
+- **Patched EXE SHA-256:** `d1a1a2737b71ea4edfb46bc8bcdc712bf55485d521f7e284be5b93df1512d9e7`
+- **EXE size:** 3,700,786 bytes
 
-The fix will remain **free**. An optional coffee/donation link may be added once the creator supplies one. Donations are never required.
+The initial tester reported improved frame pacing, but this is not a multi-system benchmark. Unknown or modified EXEs are not supported.
+
+## A lot of trial and error — buy me a coffee? ☕
+
+Getting to a working candidate took **a lot of trial and error**. I tried **multiple times with different AI models**, exploring, testing and revisiting ideas until we finally found an adjustment that seems to fix the stuttering on my system. It was far from a one-click solution.
+
+**This fix is and will remain completely free.** If it helped you enjoy Sega Rally Revo again, I would really appreciate it if you could [**buy me a coffee on Ko-fi**](https://ko-fi.com/martijnsx) — for example **€5**. Any support is appreciated, but **donations are entirely optional**. Thank you!
+
+## Feedback and issues
+
+Report your game edition, EXE hash, operating system, GPU, display refresh rate, FPS limit and before/after results in [Issues](https://github.com/Martijnsx/Sega-Rally-Revo-Frame-Pacing-Fix/issues). Do not upload copyrighted game executables.
+
+## Technical details
+
+The downloadable package includes `TECHNICAL.md`, `patch.json`, readable source code, and test scripts. It also contains exploratory renderer research, **not** an additional renderer modification.
 
 ## Disclaimer
 
-This is an unofficial, fan-made project and is not affiliated with, approved by, or endorsed by SEGA or the game's developers/publishers. All trademarks remain the property of their owners. Back up files before applying a patch. Use at your own risk.
+Unofficial fan project; not affiliated with or endorsed by SEGA or the game's developers or publishers. Trademarks belong to their respective owners. Back up your original files. Use at your own risk.
