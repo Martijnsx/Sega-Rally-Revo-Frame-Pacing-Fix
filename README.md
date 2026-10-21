@@ -4,7 +4,8 @@ An **unofficial, free and offline community patch** intended to address uneven f
 
 ## Supported executable version
 
-**SEGA Rally.exe — file version 4.0.6.0** (Windows PC). This patch is tied to the exact original **SHA-256 hash** documented below; the version number alone is not enough to confirm compatibility.
+**SEGA Rally.exe — file version 4.0.6.0** (Windows PC). This patch is tied to the exact original **SHA-256 hash** documented below; the version number alone is not enough to confirm compatibility. Taken from Sega_Rally_Revo_Win_Preinstalled_EN.zip downloaded from https://oldgamesdownload.com/game/sega-rally-revo-cf3/
+
 
 ## Download
 
