@@ -2,8 +2,6 @@
 
 An **unofficial, free and offline community patch** intended to address uneven frame delivery and microstuttering in *Sega Rally Revo (2007)* on Windows PC.
 
-> **Release status:** The P1 patch package has been prepared. A downloadable GitHub Release still needs to be uploaded and independently tested on more systems. Do not assume compatibility with all editions.
-
 ## Supported executable version
 
 **SEGA Rally.exe — file version 4.0.6.0** (Windows PC). This patch is tied to the exact original **SHA-256 hash** documented below; the version number alone is not enough to confirm compatibility.
